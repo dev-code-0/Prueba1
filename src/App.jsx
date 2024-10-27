@@ -12,7 +12,8 @@ function App() {
     e.preventDefault();
 
     // Validar que la URL sea de TikTok
-    const tiktokRegex = /^(https?:\/\/)?(www\.)?tiktok\.com\/.*$/;
+    const tiktokRegex = /^(https?:\/\/)?(www\.)?(tiktok\.com\/|vm\.tiktok\.com\/).*$/;
+
     if (!tiktokRegex.test(url)) {
       toast.error('Ingresa un enlace de TikTok no seas imbécil, ¿No sabes leer?', {
         position: "top-center",

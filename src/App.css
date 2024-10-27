@@ -1,7 +1,12 @@
 /* CSS - App.css */
-*{  
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/path/to/CascadiaCode.ttf') format('truetype');
+}
+* {
   font-family: 'Cascadia Code', sans-serif;
 }
+
 body {
   margin: 0;
   background: #25252b;
