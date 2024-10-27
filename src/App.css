@@ -1,0 +1,122 @@
+/* CSS - App.css */
+
+body {
+  margin: 0;
+  font-family: 'Cascadia Code', sans-serif;
+  background: #25252b;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+.app-container {
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  border: 2px solid #ff2770;
+  box-shadow: 0 8px 20px #ff2770;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  border-bottom: 2px solid #ff2770;
+  border-right: 5px solid #fc1e68;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background: transparent;
+}
+
+.input-field:focus {
+  border-color:  #fc1e68;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  background: linear-gradient(#25252b, #ff2770);
+  border-radius: 40px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 48%;
+  border-bottom: 2px solid #ff2770;
+  border-right: 5px solid #fc1e68;
+
+}
+.button:hover {
+  background: linear-gradient(#ff2770, #25252b);
+}
+
+.reset-button {
+  background: linear-gradient(#25252b, #ff2770);
+  border-radius: 40px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  border-bottom: 2px solid #ff2770;
+  border-right: 5px solid #fc1e68;
+  margin-top: 20px;
+}
+
+.reset-button:hover {
+  background: linear-gradient(#ff2770, #25252b);
+}
+
+.message-text {
+  font-size: 1.2rem;
+  color: #5c5c5c;
+  margin-top: 20px;
+}
+.Toastify{
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+  }
+  .button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .reset-button {
+    margin-top: 15px;
+  }
+  .app-container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .input-field {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
