@@ -150,7 +150,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Descargar  tu puto audio de TikTok...xd</h1>
+      <h1>Descargar  tu puto audio de TikTok...</h1>
       <form onSubmit={handleDownload} className="form-container" >
         <input 
           type="text"
