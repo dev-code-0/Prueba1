@@ -3,9 +3,6 @@
   font-family: 'Cascadia Code';
   src: url('/path/to/CascadiaCode.ttf') format('truetype');
 }
-* {
-  font-family: 'Cascadia Code', sans-serif;
-}
 
 body {
   margin: 0;

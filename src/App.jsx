@@ -150,9 +150,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Descargar  tu puto audio de TikTok...</h1>
-      <form onSubmit={handleDownload} className="form-container">
-        <input
+      <h1 style={ {fontFamily: 'Cascadia Code, sans-serif'} }>Descargar  tu puto audio de TikTok...</h1>
+      <form onSubmit={handleDownload} className="form-container" style={ {fontFamily: 'Cascadia Code, sans-serif'} }>
+        <input style={ {fontFamily: 'Cascadia Code, sans-serif'} }
           type="text"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
@@ -160,15 +160,15 @@ function App() {
           className="input-field"
           required
         />
-        <div className="button-group">
-          <button type="button" onClick={handlePaste} className="button">Pegar</button>
-          <button type="submit" className="button" disabled={isDownloading}>
+        <div className="button-group" style={ {fontFamily: 'Cascadia Code, sans-serif'} }>
+          <button type="button" onClick={handlePaste} className="button" style={ {fontFamily: 'Cascadia Code, sans-serif'} }>Pegar</button>
+          <button type="submit" className="button" disabled={isDownloading} style={ {fontFamily: 'Cascadia Code, sans-serif'} }>
             {isDownloading ? 'Descargando...' : 'Descargar Audio'}
           </button>
         </div>
       </form>
       
-      <button onClick={handleReset} className="button reset-button">Reiniciar</button>
+      <button onClick={handleReset} className="button reset-button" style={ {fontFamily: 'Cascadia Code, sans-serif'} }>Reiniciar</button>
       <ToastContainer />
     </div>
   );
