@@ -1,8 +1,10 @@
 /* CSS - App.css */
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('/path/to/CascadiaCode.ttf') format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap');
+
+* {
+  font-family: 'Cascadia Code', monospace;
 }
+
 
 body {
   margin: 0;
